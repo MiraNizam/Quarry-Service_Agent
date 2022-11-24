@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ccd0fa18-09f8-4531-8dd4-65c0ad63f74b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/qs_agent/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qs_agent/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qs_agent/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/datacenter/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/datacenter/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/datacenter/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/datacenter/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/datacenter/templates/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/datacenter/templates/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/datacenter/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/datacenter/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/datacenter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/datacenter/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/qs_agent/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/qs_agent/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qs_agent/qs_agent/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/qs_agent/qs_agent/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HlADfnQsbbUOxB38Pw7ycHVkUx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../frontend-QS-master/profile.html" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\elmir\PycharmProjects\QS_agent\qs_agent\datacenter" />
+      <recent name="C:\Users\elmir\PycharmProjects\QS_agent\qs_agent" />
+      <recent name="C:\Users\elmir\PycharmProjects\QS_agent" />
+      <recent name="C:\Users\elmir\PycharmProjects\QS_agent\qs_agent\datacenter\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\elmir\OneDrive\Рабочий стол\projects\Quarry_Service_Agent\qs_agent\datacenter" />
+      <recent name="C:\Users\elmir\OneDrive\Рабочий стол\projects\Quarry_Service_Agent\qs_agent\datacenter\templates" />
+      <recent name="C:\Users\elmir\OneDrive\Рабочий стол\projects\Quarry_Service_Agent\qs_agent\datacenter\templates\registration" />
+      <recent name="C:\Users\elmir\OneDrive\Рабочий стол\projects\Quarry_Service_Agent\qs_agent\datacenter\templates\registration\users" />
+      <recent name="C:\Users\elmir\OneDrive\Рабочий стол\projects\Quarry_Service_Agent\qs_agent\users\templates\users\registration" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.views">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="QS_agent" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QS_agent" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qs_agent/datacenter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qs_agent/datacenter/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="QS_agent" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qs_agent/datacenter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qs_agent/datacenter/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.models" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ccd0fa18-09f8-4531-8dd4-65c0ad63f74b" name="Changes" comment="" />
+      <created>1668849178666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668849178666</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/qs_agent/qs_agent/settings.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
