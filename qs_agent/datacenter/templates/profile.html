@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="rus">
-<head>
-    <meta charset="UTF-8">
-    <title>Профиль</title>
-</head>
-<body>
-    <h2>Данные пользователя</h2>
-</body>
-</html>
+{% extends "base.html" %}
 
+{% block title %}<title>QS-Agent Profile</title>{% endblock %}
+
+{% block content %}
+<h1>Информация по профилю</h1>
+  <p>Имя: {{ user.first_name}}</p>
+  <p>Фамилия: {{ user.last_name }} </p>
+  <p>email: {{ user.email }}</p>
+  <p>Логин: {{ user.username }}</p>
+{% endblock %}
