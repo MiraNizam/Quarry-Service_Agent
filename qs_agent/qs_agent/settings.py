@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'datacenter',
     'qs_agent',
     'users',
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -100,6 +101,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+STATIC_ROOT =  os.path.join(BASE_DIR, "assets")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
