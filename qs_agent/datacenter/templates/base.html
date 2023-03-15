@@ -1,44 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-
-  {% block title %}<title>QS-Agent</title>{% endblock %}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-
-<!--   {% load static %}
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">-->
-</head>
-
-<body>
-
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col-sm-2">
-      {% block sidebar %}
-      <ul class="sidebar-nav">
-          {% if user.is_authenticated %}
-            <li>Менеджер: {{ user.get_username }}</li>
-            <li><a href="{% url 'home' %}">Новости</a></li>
-            <li><a href="{% url 'user_orders' %}">Заказы</a></li>
-            <li><a href="{% url 'profile' %}">Профиль</a></li>
-            <li><a href="{% url 'logout'%}?next={{request.path}}">Выход</a></li>
-          {% else %}
-            <li><a href="{% url 'login'%}?next={{request.path}}">Вход</a></li>
-          {% endif %}
-  </ul>
-      </ul>
-     {% endblock %}
-      </div>
-      <div class="col-sm-10 ">
-      {% block content %}{% endblock %}
-      </div>
-    </div>
-
-  </div>
-</body>
+<html lang="en">
+  <head>
+    {% block title %}<title>QS-Agent</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          {% block navbar %}
+          <a class="navbar-brand" href="#">QS-Agent</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              {% if user.is_authenticated %}
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Главная</a>
+              <a class="nav-link" href="{% url 'user_orders' %}">Заказы</a>
+              <a class="nav-link" href="{% url 'profile' %}">Профиль</a>
+              <a class="nav-link" href="{% url 'import' %}">Выгрузка заказов</a>
+              <a class="nav-link" href="{% url 'logout'%}?next={{request.path}}">Выход</a>
+              {% else %}
+              <a class="nav-link" href="{% url 'login'%}?next={{request.path}}">Вход</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+      {% endblock %}
+      </header>
+    {% block content %}{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  </body>
 </html>
