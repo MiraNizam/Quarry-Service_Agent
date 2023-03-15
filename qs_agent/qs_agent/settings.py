@@ -24,7 +24,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'datacenter',
     'qs_agent',
-    'users',
     'import_export',
 ]
 
