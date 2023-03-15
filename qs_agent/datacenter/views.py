@@ -2,8 +2,8 @@ from .models import Orders
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.contrib.auth.models import User
-from tablib import Dataset
-from .resources import OrdersResource
+import pandas as pd
+from django.core.files.storage import FileSystemStorage
 
 
 @login_required
@@ -22,37 +22,41 @@ def home(request):
     return render(request, "home.html")
 
 
+def temp(request):
+    return render(request, "temple.html")
+
 @login_required
 def user_profile(request):
     return render(request, "profile.html")
 
 
+@login_required
 def import_excel(request):
-    # добавление одной строки в БД :), как пример.
-    # Сюда она доходит и выполняет, а дальше не хочет, но
-    # хотя бы теперь не висит система
-
-    created_order = Orders.objects.create(
-        part_no="123",
-        rus_description="Screw",
-        q_ty=23,
-        lead_time="3weeks",
-        etd="12.01.2023",
-        eta="03.02.2023",
-        delivery_date="22.01.2023",
-        order_id="MK_SK_0202",
-        manager="Liske"
-    )
-    if request.method == 'POST':
-        orders = OrdersResource()
-        dataset = Dataset()
-        new_orders = request.FILES.get('my_file')
-        imported_data = dataset.load(new_orders.read())
-        result = orders.import_data(dataset, dry_run=True)
-        if not result.has_errors():
-            orders.import_data(dataset, dry_run=False)
+    orders = Orders.objects.all()
+    orders.delete()
+    if request.method == 'POST' and request.FILES['my_file']:
+        file = request.FILES['my_file']
+        file_storage = FileSystemStorage()
+        filename = file_storage.save(file.name, file)
+        uploaded_file_url = file_storage.url(filename)
+        reading_excel_file = pd.read_excel(filename)
+        db_frame = reading_excel_file
+        for db_frame in db_frame.itertuples():
+            obj = Orders.objects.create(
+                part_no=db_frame.part_no,
+                rus_description=db_frame.rus_description,
+                q_ty=db_frame.q_ty,
+                lead_time=db_frame.lead_time,
+                etd=db_frame.etd,
+                eta=db_frame.eta,
+                delivery_date=db_frame.delivery_date,
+                order_id=db_frame.order_id,
+                manager=db_frame.manager
+            )
+            obj.save()
+        return render(request, 'import.html', {
+            'uploaded_file_url': uploaded_file_url
+        })
     return render(request, 'import.html', {})
-
-
 
 
